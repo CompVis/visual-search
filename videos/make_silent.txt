@@ -1,0 +1,5 @@
+ input_file.mp4 -vcodec copy -an output_file.mp4
+ ffmpeg -i input.mp4 -filter:v "crop=w:h:x:y" output.mp4
+ ffmpeg -i input.mp4 -r 0.25 output_%04d.png
+
+
