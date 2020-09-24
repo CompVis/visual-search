@@ -3280,3 +3280,12 @@
 				}
 
 		}
+
+.headerDivider {
+  border-left: 1px solid #5f656d; /* Border on the left */
+  width: 1px; /* Width instead of height */
+  height: 200px;
+  display: inline;
+  margin-left: 1em;
+  margin-right: 1em;
+}
