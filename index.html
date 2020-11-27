@@ -20,7 +20,7 @@
 
 		<!-- Banner -->
 			<section id="banner">
-                <h2>Interactive large scale retrieval <br> in art collections <br> using multi-style feature fusion and iterative voting</h2>
+                <h2>Interactive large scale retrieval in art collections <br> using multi-style feature aggregation</h2>
 				<p>Nikolai Ufer, Max Simon, Sabine Lang, Björn Ommer <br>
                    IWR, Heidelberg University
                 </p>
@@ -49,15 +49,15 @@
                                             <img src="images/paper_p4.png" alt="" style='width:49%; height=auto; border: 1px solid black; float: right'/>
                                             <img src="images/paper_p1.png" alt="" style='width:100%; height=auto; border: 1px solid black; float: center'/>
                                             -->
-                                            <img src="images/paper_p1.png" alt="" style='width:98%; height=auto; border: 1px solid black; float: center; margin-top:1em'/>
+                                            <img src="images/journal.png" alt="" style='width:98%; height=auto; border: 1px solid black; float: center; margin-top:1em'/>
                                         </a>
                                         <a href="index.html">Paper</a> 
                                         <div class="headerDivider"></div>
                                         <a href="index.html">BibTeX</a>
                                         <div class="headerDivider"></div>
+                                        <!--<a href="index.html">Code</a>
+                                        <div class="headerDivider"></div>--> 
                                         <a href="data/distractors.zip">Data</a>
-                                        <!--<div class="headerDivider"></div>-->
-                                        <!--<a href="index.html">GitHub</a>-->
                                     </div>
                                 </div>
 							</div>
@@ -65,7 +65,12 @@
                                 <br>
                                 <br>
                                 <h2>Abstract</h2>
-								<p align='justify' style='font-size:11pt'>The search for specific objects or motifs is essential to art history as both assists to decode the meaning of an artwork. Digitization has produced extensive art collections, but manual methods prove to be insufficient to analyze them. In the following, we present an interface and search algorithm which allows users to select image regions containing motifs or specific objects and find similar regions in an extensive image dataset, helping art historians to analyze large digitized art collections. Computer vision has presented efficient methods for visual instance retrieval in photos. However, applied to art collections, they reveal severe deficiencies because of diverse motifs and massive domain shifts induced by differences in techniques, materials, and styles. In this paper, we present a multi-style fusion approach that successfully reduces the domain gap and improves retrieval results without labeled data or curated image collections. Our region-based voting with GPU-accelerated approximate nearest-neighbor search [66] allows to find and localize even small motifs within an extensive database in seconds with high accuracy. We obtain state-of-the-art on the Brueghel dataset [66,66] and demonstrate its generalization to inhomogeneous collections with a huge amount of distractors. With our easy-to-use user interface and methodological contribution, this work manifests a significant progress towards the machine-supported analysis of visual art. </p>
+								<p align='justify' style='font-size:11pt'>
+                              The search for motifs and objects is essential to art history as it helps to understand individual artworks and analyze relations between them. Digitization has produced extensive art collections that hold much information and promise new knowledge for art history. However, in order to extract this knowledge, scholars need sufficient tools to analyze them. This article presents a novel visual search algorithm and user interface to support art historians in analyzing extensive digital art collections. Computer vision has developed efficient search methods for photos. However, applied to artworks they show severe deficiencies due to massive domain shifts induced by differences in styles and techniques. We present a novel image representation based on a multi-style feature aggregation, which reduces the domain gap and improves retrieval results without additional supervision. 
+Furthermore, we introduce a voting-based retrieval system with efficient approximate nearest-neighbor search, which enables finding and localizing small motifs within an extensive image collection in seconds.
+Our approach significantly improves state-of-the-art in terms of accuracy and search time on various datasets and applies to large and inhomogeneous collections. Besides the search algorithm, we developed a user interface that allows art historians to apply our algorithm directly. The interface enables users to search for single regions, constellations of multiple regions, and integrates an interactive feedback system. With our methodological contribution and easy-to-use user interface, this work manifests significant progress towards the machine-supported analysis of visual art. 
+
+                                </p>
 							</div>
 						</div>
 					</div>
